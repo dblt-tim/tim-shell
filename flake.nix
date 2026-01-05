@@ -7,6 +7,6 @@
 
 	outputs = { self, nixpkgs }:
 	{
-		nixosModules.dotfiles = import ./nixos/module.nix;
+		nixosModules.dotfiles = import ./module.nix;
 	};
 }
