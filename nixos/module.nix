@@ -11,7 +11,7 @@ in
 {
 	programs.hyprland.enable = true;
 
-	system.activationScripts.Dotfiles.text = ''
+	system.activationScripts.dotfiles.text = ''
 		mkdir -p ${home}/.config
 		rsync -a --ignore-existing ${dotfiles}/ ${home}/.config/
 	'';
