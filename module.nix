@@ -10,7 +10,10 @@ in
 
 {
 	programs.hyprland.enable = true;
-	programs.kitty.enable = true;
+	
+	system.environmentPackages = with pkgs; [
+		kitty
+	];
 
 	system.activationScripts.dotfiles.text = ''
 		mkdir -p ${home}/.config
