@@ -13,7 +13,7 @@ in
 
 	system.activationScripts.dotfiles.text = ''
 		mkdir -p ${home}/.config
-		${pkgs.rsync} -a --ignore-existing ${dotfiles}/* ${home}/.config/
+		${pkgs.rsync}/bin/rsync -a --ignore-existing ${dotfiles}/* ${home}/.config/
 		chown -R ${user}:users ${home}/.config
 	'';
 }
