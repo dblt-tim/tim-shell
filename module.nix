@@ -11,7 +11,7 @@ in
 {
 	programs.hyprland.enable = true;
 	
-	system.environmentPackages = with pkgs; [
+	environment.systemPackages = with pkgs; [
 		kitty
 	];
 
