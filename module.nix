@@ -13,6 +13,6 @@ in
 
 	system.activationScripts.dotfiles.text = ''
 		mkdir -p ${home}/.config
-		rsync -a --ignore-existing ${dotfiles}/ ${home}/.config/
+		rsync -a --ignore-existing ${dotfiles}/* ${home}/.config/
 	'';
 }
