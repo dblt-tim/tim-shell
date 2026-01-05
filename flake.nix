@@ -2,7 +2,7 @@
 	description = "Tim's dotfiles";
 
 	inputs = {
-		nixpkgs.url = "github:";
+		nixpkgs.url = "nixpkgs/nixos-25.11";
 	};
 
 	outputs = { self, nixpkgs }:
