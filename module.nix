@@ -13,6 +13,7 @@ in
 	
 	environment.systemPackages = with pkgs; [
 		kitty
+		fastfetch
 	];
 
 	system.activationScripts.dotfiles.text = ''
